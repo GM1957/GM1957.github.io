@@ -1,0 +1,203 @@
+.SideLeftBarItems {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ButtonsColumn {
+  margin-left: 8%;
+}
+
+.Buttons {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  height: fit-content;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+
+.Buttons:hover {
+  background-color: rgba(29, 161, 241, 0.2);
+  color: #128fdd;
+}
+
+.CreateButtonSection {
+  margin-top: 5%;
+}
+
+.CreateButton {
+  border: none;
+  background-color: #1d94dd;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  height: fit-content;
+  border-radius: 30px;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+}
+
+.CreateButton:hover {
+  background-color: #1d7ebb;
+}
+
+.Buttons span {
+  margin-left: 10px;
+}
+
+.active button {
+  color: #1d94dd;
+}
+
+.CreateTooltip {
+  position: relative;
+}
+
+.CreateTooltipCard {
+  visibility: hidden;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 37%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 80%;
+  background-color: rgba(29, 161, 241, 0.9);
+  font-weight: bold;
+  font-size: medium;
+  padding: 3% 2%;
+}
+
+.CreateTooltipCard a {
+  color: white;
+}
+
+.CreateTooltip:hover .CreateTooltipCard {
+  visibility: visible;
+  opacity: 1;
+}
+
+.CreateQuestionButton {
+  padding: 5%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.CreateBlogButton {
+  padding: 5%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.CreateQuestionButton:hover {
+  background-color: rgba(36, 116, 165, 0.596);
+}
+
+.CreateBlogButton:hover {
+  background-color: rgba(36, 116, 165, 0.603);
+}
+
+.ActiveTooltipButton div {
+  background-color: rgba(36, 116, 165, 0.603);
+}
+
+@media (max-width: 1280px) {
+  .Main .ButtonsColumn {
+    margin-left: 2%;
+  }
+  .Main .CreateTooltipCard{
+    left: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Main .ButtonsColumn {
+    margin-left: 0%;
+  }
+  .Main .Buttons span {
+    margin-left: 5px;
+  }
+  .Main .CreateTooltipCard{
+    left: 43%;
+  }
+}
+
+@media (max-width: 1145px) {
+  .Main .Buttons span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1042px) {
+  .Main .Buttons span {
+    display: none;
+  }
+  .Main .Buttons {
+    font-size: 30px;
+  }
+  .Main .ButtonsColumn {
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Main .CreateTooltipCard{
+    left: 48%;
+    padding: 2% 0%;
+  }
+}
+
+@media (max-width: 840px) {
+  .Main .ButtonsColumn {
+    margin-left: 20%;
+  }
+  .Main .CreateTooltipCard{
+    left: 55%;
+  }
+}
+
+@media (max-width: 740px) {
+  .Main .ButtonsColumn {
+    margin-left: 17%;
+  }
+  .Main .CreateTooltipCard{
+    left: 60%;
+  }
+}
+
+@media (max-width: 660px) {
+  .Main .ButtonsColumn {
+    margin-left: 15%;
+  }
+  .Main .Buttons {
+    font-size: 25px;
+  }
+  .Main .CreateTooltipCard{
+    left: 70%;
+  }
+}
+
+@media (max-width: 590px) {
+  .Main .ButtonsColumn {
+    margin-left: 10%;
+  }
+  .Main .Buttons {
+    font-size: 25px;
+  }
+}

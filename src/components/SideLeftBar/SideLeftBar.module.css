@@ -1,0 +1,37 @@
+.SideLeftBar {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  padding-top: 35%;
+  padding-right: 5%;
+  padding-left: 16%;
+  overflow: auto;
+}
+
+.SideLeftBar::-webkit-scrollbar {
+  width: 3px;
+}
+
+
+@media (max-width: 1112px) {
+  .SideLeftBar {
+    padding-top: 50%;
+    padding-right: 0%;
+  }
+}
+
+@media (max-width: 800px) {
+  .SideLeftBar {
+    padding-top: 50%;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 540px) {
+  .SideLeftBar{
+    display: none;
+  }
+}
